@@ -1,0 +1,10 @@
+console.log(Math.sqrt(9));
+console.log(Math.round(10.5));
+console.log(Math.ceil(10.1));
+console.log(Math.floor(10.9));
+console.log(Math.abs(-100));
+console.log(Math.PI);
+console.log(Math.max(10,20,180,10));
+console.log(Math.min(10,20,180,4));
+console.log(Math.pow(2,3));
+console.log(Math.random());
