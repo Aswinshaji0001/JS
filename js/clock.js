@@ -16,7 +16,7 @@ function timer(){
         document.getElementById("main").style.objectFit='cover'
         document.getElementById("main").style.backgroundSize='cover'
     }
-    document.getElementById("timer").textContent=`${putZero(hours%12==0?hours:hours%12)} - ${putZero(date.getMinutes())} - ${putZero(date.getSeconds())} ${ampm}`
+    document.getElementById("timer").textContent=`${putZero(hours%12==0?hours:hours%12)} : ${putZero(date.getMinutes())}: ${putZero(date.getSeconds())} ${ampm}`
     setTimeout(()=>{
         timer()
     },1000)
