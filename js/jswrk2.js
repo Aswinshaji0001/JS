@@ -1,5 +1,5 @@
 function fetchData() {
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    fetch('https://jsonplaceholder.typicode.com/albums')
         .then((res) => {
             return res.json()
         })
@@ -8,10 +8,9 @@ function fetchData() {
             str = ``
             data.map((data) => {
                 str += `<div class="card">
-                <img src="${data.thumbnailUrl}" alt="">
-                    <h3>${data.title}</h3>
-                    <p>${data.id}</p>
-                    <img src="${data.url}" alt="">
+                    <h3>${data.userId}</h3>
+                    <h4>${data.id}</h4>
+                    <p>${data.title}</p>
                 </div>`
             })
             document.getElementById("lists").innerHTML = str
