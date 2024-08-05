@@ -10,10 +10,8 @@ function fetchData() {
                 str += `<div class="card">
                 <div class="c1">
                 <img src="${data.thumbnailUrl}" alt="">
+                <h3>${data.title}</h3>
                 </div>
-                 <div class="m1">
-                    <h3>${data.title}</h3>
-                 </div>
                     <p>${data.id}</p>
                     <div class="d1">
                     <img src="${data.url}" alt="">
