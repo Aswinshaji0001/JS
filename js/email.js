@@ -1,7 +1,7 @@
 function handleChange(e){
     console.log(e.value);
     data=e.value;
-    regx=/^[a-zA-Z]{4,}\d{5,}(@)[gmail.com]/
+    regx=/^[a-z][a-z0-9]{3,}@[a-z]{4,6}.(com||in)$/
 
     result=regx.test(data);
     console.log(result);
